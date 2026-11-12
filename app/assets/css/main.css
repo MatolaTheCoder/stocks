@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  --color-night: #0F1117;
+  --color-lilac: #AEB4DE;
+  --color-mist: #E4E6F0;
+    
+  --font-serif: "Fraunces", Georgia, serif;
+
+  --color-paper: #FFFFFF;
+  --color-ink: #16181F;
+  --color-stone: #6B6F7B;
+}
+
+html {
+  background: var(--color-night);
+  color: var(--color-mist);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.glass {
+  background: rgb(255 255 255 / 0.09);
+  border: 1px solid rgb(255 255 255 / 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-light {
+  background: rgb(255 255 255 / 0.85);
+  border: 1px solid rgb(22 24 31 / 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 24px rgb(22 24 31 / 0.06);
+}

@@ -1,16 +1,20 @@
+<script setup lang="ts">
+
+</script>
+
 
 <template>
-  <main class="min-h-screen flex flex-col items-center justify-center bg-slate-950 text-white">
-    <h1 class="text-5xl font-bold text-blue-500">
-      Hello World!
-    </h1>
-
-    <p class="mt-4 text-lg text-slate-300">
-      Meu portefólio está a começar.
-    </p>
-
-    <button class="mt-6 rounded-lg bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-700 transition">
-      Começar
-    </button>
-  </main>
+  <div>
+    <div id="topo" class="relative h-screen overflow-hidden">
+      <img
+        src="/images/hero.webp"
+        srcset="/images/hero-1280.webp 1280w, /images/hero.webp 2560w"
+        sizes="100vw"
+        alt="Jay de pé nas rochas junto ao mar, a olhar para o horizonte"
+        class="absolute inset-0 h-full w-full object-cover object-[56%_50%]"
+        fetchpriority="high"
+      >
+    </div>
+    <div class="h-[150vh] bg-paper" />
+  </div>
 </template>
